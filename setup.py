@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="easy-regex",
-    version="0.1.0",
+    name="regex-ease",
+    version="0.1.1",
     description="A simple regex library to make your life easy :)",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
