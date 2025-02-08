@@ -1,0 +1,48 @@
+[MASTER]
+# Ignore specific directories
+ignore=tests
+
+[MESSAGES CONTROL]
+# Disable only docstring warnings (enable everything else)
+disable=
+    missing-docstring,
+    too-few-public-methods
+
+[REPORTS]
+# Minimum score before failure (Enforce 10 score)
+fail-under=10.0
+
+# Report format (choose: text, json, parseable, colorized)
+output-format=colorized
+
+[FORMAT]
+# Enforce 80-char line limit
+max-line-length=80
+
+# Strict indentation
+indent-string='    '
+
+[DESIGN]
+# Reduce max function arguments (5 → 4)
+max-args=4
+
+# Reduce max attributes per class (7 → 5)
+max-attributes=5
+
+# Reduce max local variables (15 → 10)
+max-locals=10
+
+# Limit function/method length (50 → 30)
+max-statements=30
+
+[NAMING]
+# Force snake_case for functions & variables
+function-rgx=^[a-z_][a-z0-9_]{2,30}$
+variable-rgx=^[a-z_][a-z0-9_]{2,30}$
+
+# Class names must be CamelCase
+class-rgx=^[A-Z][a-zA-Z0-9]+$
+
+[LOGGING]
+# Only allow `logging` module (avoid print debugging)
+logging-modules=logging

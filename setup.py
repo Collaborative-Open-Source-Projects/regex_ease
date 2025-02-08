@@ -1,10 +1,13 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
+
 setup(
     name="regex-ease",
     version="0.1.1",
     description="A simple regex library to make your life easy :)",
-    long_description=open("README.md").read(),
+    long_description=long_description,
     long_description_content_type="text/markdown",
     author="Siddesh Shewde",
     author_email="siddesh.shewde@gmail.com",
