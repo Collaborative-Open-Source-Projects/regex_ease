@@ -10,5 +10,5 @@ class Patterns:
     @staticmethod
     def email(email: str) -> bool:
         """Validates an email address."""
-        
+
         return bool(Patterns.EMAIL_PATTERN.fullmatch(email))
