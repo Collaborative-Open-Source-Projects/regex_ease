@@ -10,7 +10,7 @@ on:
   workflow_dispatch:  # Allows manual runs from GitHub UI
 
 jobs:
-  test:
+  unittests:
     runs-on: ubuntu-latest
 
     steps:
