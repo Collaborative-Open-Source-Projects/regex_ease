@@ -20,5 +20,5 @@ class Validators:
     @staticmethod
     def is_valid_url(url: str) -> bool:
         """Checks if the given URL is valid."""
-        
+
         return bool(Patterns.URL_PATTERN.fullmatch(url))
